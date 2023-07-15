@@ -17,6 +17,13 @@
   text-decoration: none;
 }
 
+.app{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -58,9 +65,11 @@
 .grid {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .card {
@@ -116,4 +125,252 @@
 }
 .logo img {
   filter: invert(1);
+}
+
+.bgcr{
+  background-color: #22293b;
+}
+.heading{
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  color: #fff;
+  background-color: #1f2237;
+  margin-bottom: 1rem;
+  width: 100% !important;
+  /* border-radius: 20px; */
+}
+
+.navbarTitle {
+  font-style: bold;
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content:center;
+  width: 50%;
+}
+.navLinks a {
+  color: #ffffff;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease 0s;
+}
+.navLinks a:hover {
+  color: #0ea5e9;
+}
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+  border: #0ea5e9 solid 2px;
+  transition: all 0.3s ease 0s;
+}
+.avatar:hover {
+  border: skyblue solid 2px;
+  cursor: pointer;
+}
+.profileDropdown {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 250px;
+  background-color: #F1F1E6;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding-left: 30px;
+  font-weight: 600;
+}
+
+.profileDropdown p {
+  color: #111;
+}
+
+.profileDropdown p:hover {
+  color: #0ea5e9;
+}
+
+.btn {
+  background-color: #1f2237;
+  border-radius: 10%;
+  width: 80%;
+  height: 30px;
+}
+
+.packCard {
+  width: 98%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.packImg {
+  flex: content;
+  width: 300px;
+  height: 300px;
+}
+
+.shopPack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #727787;
+  padding: 10px;
+  border-radius: 10px;
+  border: #fff solid 1px;
+  color: #F4F9FF;
+}
+.packInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  width: 60%;
+}
+
+.nftCard {
+  background-color: #727787;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: #F4F9FF solid 1px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 30%; */
+
+}
+.buyButton {
+  width: 70% !important;
+  background-color: #0ea5e9
+
+}
+
+.cardPrice{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  
+}
+
+.cardName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: -10px;
+  padding: 0px;
+  text-align: center;
+}
+
+.saleCard {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  border: #eaeaea solid 2px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.myCardInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.myCardInfo p {
+  color: #fff;
+  font-size: 16px;
+  border: #111 solid 2px;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+.saleButton {
+  background-color: #0ea5e9 !important;
+  border-radius: 4px !important;
+  width: 80%;
+  padding: 10px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.listingInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: #F4F9FF;
+}
+
+.heroPage {
+  width: 100%;
+  background-image: url("https://media.discordapp.net/attachments/1074964327053930518/1111406889029357628/watase.eth_land_with_pokemon_creatures_landscape_92325be6-3621-4dac-b936-d03a0bd854f8.png?width=1151&height=685");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  color: white;
+}
+.heroSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.heroButton {
+  background-color: white;
+  color: #1b2129;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.connectWalletBtn {
+  background-color: #0ea5e9 !important;
+}
+
+.footer{
+  margin-top: auto;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: #1f2237;
+}
+
+.footerLink{
+  display: flex;
+  justify-content: center;
+}
+
+.footerLink a{
+  color: initial !important;
+  padding: 0 0.5rem;
 }
